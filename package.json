@@ -1,0 +1,14 @@
+{
+  "name": "ws1-starter",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "http-server ./site -p 5173 -c-1",
+    "test:e2e": "playwright test",
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.46.0",
+    "http-server": "^14.1.1"
+  }
+}
