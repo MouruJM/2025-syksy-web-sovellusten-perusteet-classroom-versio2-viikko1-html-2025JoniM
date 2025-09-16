@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="fi">
 <head>
@@ -9,16 +8,42 @@
 </head>
 <body>
   <header>
-    <h1><!-- TODO: Taulukko-sivun H1 --></h1>
+    <h1>Opiskelijoiden tiedot</h1>
     <nav aria-label="Päävalikko">
-      <!-- TODO: Sama navigaatio kuin muilla sivuilla -->
+      <ul>
+        <li><a href="./index.html">Etusivu</a></li>
+        <li><a href="./table.html">Taulukko</a></li>
+        <li><a href="./form.html">Lomake</a></li>
+        <li><a href="./image.html">Kuva</a></li>
+      </ul>
     </nav>
   </header>
   <main>
-    <!-- TODO: Lisää datataulukko, jossa on caption + thead/tbody -->
+    <table>
+      <caption>Kurssille ilmoittautuneet opiskelijat</caption>
+      <thead>
+        <tr>
+          <th>Nimi</th>
+          <th>Opiskelijanumero</th>
+          <th>Sähköposti</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Matti Meikäläinen</td>
+          <td>123456</td>
+          <td>matti@example.com</td>
+        </tr>
+        <tr>
+          <td>Liisa Virtanen</td>
+          <td>654321</td>
+          <td>liisa@example.com</td>
+        </tr>
+      </tbody>
+    </table>
   </main>
   <footer>
-    <!-- TODO: Footer -->
+    <p>&copy; 2025 Web-sovellusten perusteet</p>
   </footer>
 </body>
 </html>

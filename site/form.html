@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="fi">
 <head>
@@ -9,21 +8,33 @@
 </head>
 <body>
   <header>
-    <h1><!-- TODO: Lomake-sivun H1 --></h1>
+    <h1>Ilmoittautumislomake</h1>
     <nav aria-label="Päävalikko">
-      <!-- TODO: Sama navigaatio kuin muilla sivuilla -->
+      <ul>
+        <li><a href="./index.html">Etusivu</a></li>
+        <li><a href="./table.html">Taulukko</a></li>
+        <li><a href="./form.html">Lomake</a></li>
+        <li><a href="./image.html">Kuva</a></li>
+      </ul>
     </nav>
   </header>
   <main>
-    <!-- TODO: Luo <form>:
-         - lisää label for + id parit
-         - järkevät type-arvot (email, number, tms.)
-         - method ja action attribuutit
-         - submit-painike
-    -->
+    <form method="post" action="/submit">
+      <label for="name">Nimi:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Sähköposti:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="age">Ikä:</label>
+      <input type="number" id="age" name="age" min="0" />
+
+      <button type="submit">Lähetä</button>
+    </form>
   </main>
   <footer>
-    <!-- TODO: Footer -->
+    <p>&copy; 2025 Web-sovellusten perusteet</p>
   </footer>
 </body>
 </html>
+
